@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h1>News</h1>
+      </div>
+
+      <div class="links">
+        <ul>
+          <li>Home</li>
+          <li>World</li>
+          <li>Business</li>
+          <li>Technology</li>
+        </ul>
+      </div>
+
+      <div class="search">
+        <input type="text" id="searchBox" placeholder="eg.science" />
+        <button id="searchBtn">search</button>
+      </div>
+    </nav>
+    <main>
+      <div id="cardcontainer" class="news-container container flex"></div>
+    </main>
+    <template id="template-news-cards">
+      <div class="card">
+        <a id="read-more-link">
+          <div class="card-header">
+            <img src="https://via.placeholder.com/400x200" id="news-img" />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">This is the title</h3>
+            <h6 class="news-source" id="news-source">newgenz 02/02/2005</h6>
+            <p id="news-desc">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </a>
+      </div>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
